@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site de Cards Acessíveis com Materialize</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="name-institution">ICC - Instituto do Câncer do Ceará</div>
+    <div class="name-hospital">Hospital Haroldo Juaçaba</div>
+</div>
+
+<div class="title">
+    <a href="index.html" class="orange darken-4 waves-effect waves-light btn-large" id="button-back" onmouseover="readText('Voltar para página inicial')" ontouchstart="readText(' Voltar para página inicial')" ontouchmove="readText('Voltar para página inicial')"><i class="material-icons left">arrow_back</i>Voltar</a>
+</div>
+
+<!-- PRIMEIRO CARD -->
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card" id="CardClick" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
+                </div>
+    
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+                <div class="card-content">
+                    <a href="#" onmouseover="readText('Consulta Aberta. Data 06/03/2024 ás 15:30. Exame de Sangue')" ontouchstart="readText(' Consulta Aberta. Data 06/03/2024 ás 15:30. Exame de Sangue')" ontouchmove="readText('Consulta Aberta. Data 06/03/2024 ás 15:30. Exame de Sangue')">
+                        <h2 class="cardTitle" id="page-inquiry">Consulta</h2>
+                        <h4 class="cardTitle" id="page-inquiry-aux">Aberta</h4>
+                    </a>
+
+                    <hr class="outline">
+                    <p class="text-card" onmouseover="readText('Data da consulta, 06/03/2024 ás 15:30.')" ontouchstart="readText(' Data da consulta, 06/03/2024 ás 15:30.')" ontouchmove="readText('Data da consulta, 06/03/2024 ás 15:30.')">Data: <span class="text-card-aux">06/03/2024 às 15:30</span></p>
+                    <p class="text-card" onmouseover="readText('Local da consulta, Hospital Haroldo Juaçaba')" ontouchstart="readText(' Local da consulta, Hospital Haroldo Juaçaba')" ontouchmove="readText('Local da consulta, Hospital Haroldo Juaçaba')">Local: <span class="text-card-aux">Hospital Haroldo Juaçaba</span></p>
+                    <p class="text-card" onmouseover="readText('Médico: Doutor, João da Silva')" ontouchstart="readText(' Médico: Doutor, João da Silva')" ontouchmove="readText('Médico: Doutor, João da Silva')">Doutor: <span class="text-card-aux">Dr. João Silva</span></p>
+                    <p class="text-card" onmouseover="readText('Tipo do Exame: Exame de Sangue')" ontouchstart="readText(' Tipo do Exame: Exame de Sangue')" ontouchmove="readText('Tipo do Exame: Exame de Sangue')">Tipo de Exame: <span class="text-card-aux">Exame de Sangue</span></p>
+                    <p class="text-card" onmouseover="readText('Observação: Chegar antes das 13h e fazer jejum de 12h')" ontouchstart="readText(' Observação: Chegar antes das 13h e fazer jejum de 12h')" ontouchmove="readText('Observação: Chegar antes das 13h e fazer jejum de 12h')" >Observação: <span class="text-card-aux">Chegar antes das 13h e fazer jejum de 12h</span></p>
+                    <span id="card-schedule-text" onmouseover="readText('Clique na imagem para agendar em seu calendario virtual')" ontouchstart="readText(' Clique na imagem para agendar em seu calendario virtual')" ontouchmove="readText('Clique na imagem para agendar em seu calendario virtual')">Clique na imagem para agendar em seu calendario</span>
+                    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Consulta&dates=20240306T153000/20240306T163000&details=Consulta%20com%20Dr.%20Jo%C3%A3o%20Silva%20no%20Hospital%20Haroldo%20Jua%C3%A7aba%20%28Exame%20de%20Sangue%29.%20Observa%C3%A7%C3%A3o%3A%20Chegar%20antes%20das%2013h%20e%20fazer%20jejum%20de%2012h&location=Hospital%20Haroldo%20Jua%C3%A7aba" target="_blank">
+                        <img src="img/Calendar-bro.svg" alt="Adicionar à Agenda" id="card-schedule-img">
+                    </a>                    
+                </div>                
+        </div>
+    </div>
+
+    <!-- SEGUNDO CARD -->
+    <div class="col s12 m4">
+        <div class="card" id="CardClick" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
+                </div>
+    
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+                <div class="card-content">
+                    <a href="#" onmouseover="readText('Consulta Aberta. Data 10/04/2024 ás 19:45. Exame de Mamografia')" ontouchstart="readText(' Consulta Aberta. Data 10/04/2024 ás 19:45. Exame de Mamografia')" ontouchmove="readText('Consulta Aberta. Data 10/04/2024 ás 19:45. Exame de Mamografia')">
+                        <h2 class="cardTitle" id="page-inquiry">Consulta</h2>
+                        <h4 class="cardTitle" id="page-inquiry-aux">Aberta</h4>
+                    </a>
+
+                    <hr class="outline">
+                    <p class="text-card" onmouseover="readText('Data da consulta, 10/04/2024 ás 19:45.')" ontouchstart="readText(' Data da consulta, 10/04/2024 ás 19:45.')" ontouchmove="readText('Data da consulta, 10/04/2024 ás 19:45.')">Data: <span class="text-card-aux">10/04/2024 ás 19:45</span></p>
+                    <p class="text-card" onmouseover="readText('Local da consulta, Instituto do Câncer do Ceará')" ontouchstart="readText(' Local da consulta, Instituto do Câncer do Ceará')" ontouchmove="readText('Local da consulta, Instituto do Câncer do Ceará')">Local: <span class="text-card-aux">Instituto do Câncer do Ceará</span></p>
+                    <p class="text-card" onmouseover="readText('Médica: Doutora, Raquel Serafim')" ontouchstart="readText(' Médica: Doutora, Raquel Serafim')" ontouchmove="readText('Médica: Doutora, Raquel Serafim')">Doutora: <span class="text-card-aux">Dra. Raquel Serafim</span></p>
+                    <p class="text-card" onmouseover="readText('Tipo do Exame: Exame de Mamografia')" ontouchstart="readText(' Tipo do Exame: Exame de Mamografia')" ontouchmove="readText('Tipo do Exame: Exame de Mamografia')">Tipo de Exame: <span class="text-card-aux">Exame de Mamografia</span></p>
+                    <p class="text-card" onmouseover="readText('Observação: vestirem duas peças (calça ou bermuda e camiseta) e não usarem nenhum cosmético (desodorante, creme, talco etc) ')" ontouchstart="readText(' Observação: vestirem duas peças (calça ou bermuda e camiseta) e não usarem nenhum cosmético (desodorante, creme, talco etc) ')" ontouchmove="readText('Observação: vestirem duas peças (calça ou bermuda e camiseta) e não usarem nenhum cosmético (desodorante, creme, talco etc) ')" >Observação: <span class="text-card-aux">vestirem duas peças (calça ou bermuda e camiseta) e não usarem nenhum cosmético (desodorante, creme, talco etc) </span></p>
+                    <span id="card-schedule-text" onmouseover="readText('Clique na imagem para agendar em seu calendario virtual')" ontouchstart="readText(' Clique na imagem para agendar em seu calendario virtual')" ontouchmove="readText('Clique na imagem para agendar em seu calendario virtual')">Clique na imagem para agendar em seu calendario</span>
+                    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Consulta&dates=20240410T194500/20240410T204500&details=Consulta%20com%20Dra.%20Raquel%20Serafim%20no%20Instituto%20do%20C%C3%A2ncer%20do%20Cear%C3%A1%20%28Exame%20de%20Mamografia%29.%20Observa%C3%A7%C3%A3o%3A%20vestirem%20duas%20pe%C3%A7as%20%28cal%C3%A7a%20ou%20bermuda%20e%20camiseta%29%20e%20n%C3%A3o%20usarem%20nenhum%20cosm%C3%A9tico%20%28desodorante%2C%20creme%2C%20talco%20etc%29&location=Instituto%20do%20C%C3%A2ncer%20do%20Cear%C3%A1" target="_blank">
+                        <img src="img/Calendar-bro.svg" alt="Adicionar à Agenda" id="card-schedule-img">
+                    </a>                    
+                </div>                
+        </div>
+    </div>    
+    
+    <!-- TERCEIRO CARD -->
+    <div class="col s12 m4">
+        <div class="card" id="CardClick" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
+                </div>
+    
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+                <div class="card-content">
+                    <a href="#" onmouseover="readText('Consulta Fechada. Data 27/02/2024 ás 10:30. Exame de Endoscopia')" ontouchstart="readText('Consulta Fechada. Data 27/02/2024 ás 10:30. Exame de Endoscopia')" ontouchmove="readText('Consulta Fechada. Data 27/02/2024 ás 10:30. Exame de Endoscopia')">
+                        <h2 class="cardTitle" id="page-inquiry">Consulta</h2>
+                        <h4 class="cardTitle" id="page-inquiry-aux">Fechada</h4>
+                    </a>
+
+                    <hr class="outline">
+                    <p class="text-card" onmouseover="readText('Data da consulta, 27/02/2024 ás 10:30.')" ontouchstart="readText(' Data da consulta, 27/02/2024 ás 10:30.')" ontouchmove="readText('Data da consulta, 27/02/2024 ás 10:30.')">Data: <span class="text-card-aux">27/02/2024 ás 10:30</span></p>
+                    <p class="text-card" onmouseover="readText('Local da consulta, Hospital Haroldo Juaçaba')" ontouchstart="readText(' Local da consulta, Hospital Haroldo Juaçaba')" ontouchmove="readText('Local da consulta, Hospital Haroldo Juaçaba')">Local: <span class="text-card-aux">Hospital Haroldo Juaçaba</span></p>
+                    <p class="text-card" onmouseover="readText('Médico: Doutor, Meireles Lira Júnio')" ontouchstart="readText(' Médico: Doutor, Meireles Lira Júnio')" ontouchmove="readText('Médico: Doutor, Meireles Lira Júnio')">Doutor: <span class="text-card-aux">Dr. Meireles Lira Júnio</span></p>
+                    <p class="text-card" onmouseover="readText('Tipo do Exame: Exame de Endoscopia')" ontouchstart="readText(' Tipo do Exame: Exame de Endoscopia')" ontouchmove="readText('Tipo do Exame: Exame de Endoscopia')">Tipo de Exame: <span class="text-card-aux">Exame de Endoscopia</span></p>
+                    <p class="text-card" onmouseover="readText('Observação: Fazer jejum no período da noite e não comer doce')" ontouchstart="readText(' Observação: Fazer jejum no período da noite e não comer doce')" ontouchmove="readText('Observação: Fazer jejum no período da noite e não comer doce')" >Observação: <span class="text-card-aux">Fazer jejum no período da noite e não comer doce</span></p>
+                    <span id="card-schedule-text" onmouseover="readText('Clique na imagem para agendar em seu calendario virtual')" ontouchstart="readText(' Clique na imagem para agendar em seu calendario virtual')" ontouchmove="readText('Clique na imagem para agendar em seu calendario virtual')">Clique na imagem para agendar em seu calendario</span>
+                    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Consulta&dates=20240227T103000/20240227T113000&details=Consulta%20com%20Dr.%20Meireles%20Lira%20J%C3%BAnio%20no%20Hospital%20Haroldo%20Jua%C3%A7aba%20%28Exame%20de%20Endoscopia%29.%20Observa%C3%A7%C3%A3o%3A%20Fazer%20jejum%20no%20per%C3%ADodo%20da%20noite%20e%20n%C3%A3o%20comer%20doce&location=Hospital%20Haroldo%20Jua%C3%A7aba" target="_blank">
+                        <img src="img/Calendar-bro.svg" alt="Adicionar à Agenda" id="card-schedule-img">
+                    </a>                                      
+                </div>                
+        </div>
+    </div>
+</div>
+
+<!-- Código da VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script src="js/responsivevoice.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

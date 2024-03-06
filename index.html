@@ -32,7 +32,7 @@
                 </div>
             </div>
             
-            <a href="" onmouseover="readText('Ver Consultas')" ontouchstart="readText(' Ver Consultas')" ontouchmove="readText('Ver Consultas')">
+            <a href="consultas.html" onmouseover="readText('Ver Consultas')" ontouchstart="readText(' Ver Consultas')" ontouchmove="readText('Ver Consultas')">
                 <div class="card-image" id="image-card">
                     <img src="img/Doctors-bro.svg" alt="Consultas">
                 </div>
@@ -134,13 +134,13 @@
             <div class="row">
                 <div class="col s6">
                     <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
-                        <img src="/img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
                     </div>
                 </div>
 
                 <div class="col s6">
                     <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
-                        <img src="/img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
                     </div>
                 </div>
             </div>
@@ -158,9 +158,6 @@
     </div>
 </div>
 
-<script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_API_KEY"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 <!-- Código da VLibras -->
 <div vw class="enabled">
   <div vw-access-button class="active"></div>
@@ -168,14 +165,12 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/responsivevoice.js"></script>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script src="https://code.responsivevoice.org/responsivevoice.js?key=d9iQL1S1"></script>
-<script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-    
-    function readText(text) {
-        responsiveVoice.speak(text, "Brazilian Portuguese Female"); // Altere para o idioma e o gênero de voz desejados
-    }
-  </script>
+
+<script src="js/index.js"></script>
 </body>
 </html>

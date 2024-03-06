@@ -24,6 +24,18 @@ body {
     font-weight: bolder;
 }
 
+.text-card {
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 10px 0px;
+    margin: 0;
+    color: #333;
+}
+
+.text-card-aux {
+    color: #e65100;
+}
+
 .title {
     font-family: Arial, sans-serif; 
     text-align: center; 
@@ -54,6 +66,7 @@ body {
 
 #image-card {
     transition: transform 0.2s ease;
+    object-fit: cover;
 }
 
 #image-card:hover {
@@ -61,6 +74,38 @@ body {
 }
 
 #logo-image img {
-    max-width: 100px; /* Define a largura máxima da imagem */
-    max-height: 100px; /* Define a altura máxima da imagem */
+    max-width: 100px;
+    max-height: 100px; 
+    object-fit: cover;
 }
+
+#card-schedule-img {
+    max-width: 200px;
+    max-height: 200px; 
+    object-fit: cover;
+    display: block; 
+    margin-left: 60px;
+}
+
+#card-schedule-text {
+    display: block;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #033164;
+}
+
+#page-inquiry {
+    margin-top: -50px;
+    color: #2c2c2c;
+}
+
+#page-inquiry-aux {
+    margin-top: -30px;
+    color: #2c2c2c;
+}
+
+#button-back {
+    font-size: 22px;
+    font-weight: bold;
+}
+

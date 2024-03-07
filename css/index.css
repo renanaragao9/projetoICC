@@ -63,6 +63,21 @@ body {
     border-color: #1565c0;
 }
 
+.no-results {
+    text-align: center;
+    color: #FFA500;
+    font-weight: bold;
+}
+
+.search-input {
+    text-align: left;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+.search-label {
+    color: #FFA500;
+}
+
 
 #image-card {
     transition: transform 0.2s ease;

@@ -6,9 +6,11 @@ body {
 .card {
     margin: 10px;
 }
+
 .card img {
     border-radius: 5px;
 }
+
 .card-title {
     font-size: 20px;
 }
@@ -73,6 +75,7 @@ body {
     text-align: left;
     color: #2c2c2c;
     font-weight: bold;
+
 }
 .search-label {
     color: #FFA500;
@@ -124,3 +127,13 @@ body {
     font-weight: bold;
 }
 
+
+/* Modificando Materialize */
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.input-field label {
+    font-size: 20px;
+}

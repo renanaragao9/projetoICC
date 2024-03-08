@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto ICC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="name-institution">ICC - Instituto do Câncer do Ceará</div>
+    <div class="name-hospital">Hospital Haroldo Juaçaba</div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="input-field">
+            <input id="search" type="text" class="validate search-input center-align">
+            <label for="search" class="search-label">Pesquisar</label>
+        </div>
+    </div>
+</div>
+
+<div id="noResults" style="display: none; text-align: center; color: #FFA500; font-weight: bold;">Nenhum resultado encontrado.</div>
+
+
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card" id="CardClick" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+            
+            <a href="consultas.html" onmouseover="readText('Ver Consultas')" ontouchstart="readText(' Ver Consultas')" ontouchmove="readText('Ver Consultas')">
+                <div class="card-image" id="image-card">
+                    <img src="img/Doctors-bro.svg" alt="Consultas">
+                </div>
+
+                <div class="card-content">
+                    <hr class="outline">
+                    <h2 class="cardTitle">Consultas</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Código da VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/responsivevoice.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projeto ICC</title>
+<title>Projeto ICC - Boletos</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="css/index.css">
@@ -26,34 +26,98 @@
 
 <div id="noResults" style="display: none; text-align: center; color: #FFA500; font-weight: bold;">Nenhum resultado encontrado.</div>
 
+<div class="title">
+    <a href="index.html" class="orange darken-4 waves-effect waves-light btn-large" id="button-back"><i class="material-icons">arrow_back</i>Voltar</a>
+</div>
 
 <div class="row">
+    <!-- BOLETO EM ABERTO -->
     <div class="col s12 m4">
-        <div class="card" id="CardClick" data-clicks="0">
+        <div class="card card-click" data-clicks="0">
             <div class="row">
                 <div class="col s6">
-                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Hospital Haroldo Juaçaba')" ontouchstart="readText(' Imagem do Hospital Haroldo Juaçaba')" ontouchmove="readText('Imagem do Hospital Haroldo Juaçaba')">
+                    <div class="card-image logo-image">
                         <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
                     </div>
                 </div>
-
                 <div class="col s6">
-                    <div class="card-image" id="logo-image" onmouseover="readText('Imagem do Instituto do Cancer do Ceará')" ontouchstart="readText(' Imagem do Instituto do Cancer do Ceará')" ontouchmove="readText('Imagem do Instituto do Cancer do Ceará')">
+                    <div class="card-image logo-image">
                         <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
                     </div>
                 </div>
             </div>
-            
-            <a href="consultas.html" onmouseover="readText('Ver Consultas')" ontouchstart="readText(' Ver Consultas')" ontouchmove="readText('Ver Consultas')">
-                <div class="card-image" id="image-card">
-                    <img src="img/Doctors-bro.svg" alt="Consultas">
-                </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Boleto <br> Em Aberto</h2>
+                <hr class="outline">
+                <p class="text-card">Descrição: <span class="text-card-aux">Mensalidade de tratamento</span></p>
+                <p class="text-card">Vencimento: <span class="text-card-aux">10/04/2024</span></p>
+                <p class="text-card">Valor: <span class="text-card-aux">R$ 250,00</span></p>
+                <p class="text-card">Código de barras: <span class="text-card-aux">34191.79001 01043.510047 91020.150008 1 98650000025000</span></p>
+                <span class="card-schedule-text">Clique no botão para baixar o boleto</span>
+                <a href="#" class="orange darken-4 waves-effect waves-light btn" target="_blank">
+                    <i class="material-icons">download</i>Baixar boleto
+                </a>
+            </div>
+        </div>
+    </div>
 
-                <div class="card-content">
-                    <hr class="outline">
-                    <h2 class="cardTitle">Consultas</h2>
+    <!-- BOLETO PAGO -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image logo-image">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
                 </div>
-            </a>
+                <div class="col s6">
+                    <div class="card-image logo-image">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Boleto <br> Pago</h2>
+                <hr class="outline">
+                <p class="text-card">Descrição: <span class="text-card-aux">Mensalidade de tratamento</span></p>
+                <p class="text-card">Vencimento: <span class="text-card-aux">10/03/2024</span></p>
+                <p class="text-card">Pago em: <span class="text-card-aux">08/03/2024</span></p>
+                <p class="text-card">Valor: <span class="text-card-aux">R$ 250,00</span></p>
+                <span class="card-schedule-text">Clique no botão para ver o comprovante</span>
+                <a href="#" class="orange darken-4 waves-effect waves-light btn" target="_blank">
+                    <i class="material-icons">receipt</i>Comprovante
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOLETO VENCIDO -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-image logo-image">
+                        <img src="img/logo.png" class="left" alt="Imagem do Hospital Haroldo Juaçaba">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="card-image logo-image">
+                        <img src="img/logoicc.png" class="right" alt="Imagem do Instituto do Cancer do Ceará">
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Boleto <br> Vencido</h2>
+                <hr class="outline">
+                <p class="text-card">Descrição: <span class="text-card-aux">Exame complementar</span></p>
+                <p class="text-card">Vencimento: <span class="text-card-aux">15/02/2024</span></p>
+                <p class="text-card">Valor: <span class="text-card-aux">R$ 180,00</span></p>
+                <p class="text-card">Observação: <span class="text-card-aux">Sujeito a juros e multa. Procure a central de atendimento.</span></p>
+                <span class="card-schedule-text">Clique no botão para gerar a segunda via</span>
+                <a href="#" class="orange darken-4 waves-effect waves-light btn" target="_blank">
+                    <i class="material-icons">autorenew</i>Segunda via
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -66,11 +130,8 @@
   </div>
 </div>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="js/responsivevoice.js"></script>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
 <script src="js/index.js"></script>
 </body>
 </html>

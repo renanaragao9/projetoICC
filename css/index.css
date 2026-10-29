@@ -5,6 +5,16 @@ body {
 
 .card {
     margin: 10px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Padroniza a altura das ilustrações dos cards */
+.image-card img {
+    max-height: 140px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .card img {
@@ -15,21 +25,39 @@ body {
     font-size: 20px;
 }
 
-.card a{
+.card a {
     text-decoration: none;
     color: #e65100;
 }
 
+/* Botões do Materialize dentro dos cards: garantir texto e ícone brancos e visíveis */
+.card a.btn,
+.card a.btn-large {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.card a.btn i,
+.card a.btn-large i {
+    color: #fff;
+}
+
 .cardTitle {
     text-align: center;
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1.2;
 }
 
 .text-card {
-    font-size: 22px;
-    font-weight: bolder;
-    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 0px;
     margin: 0;
     color: #333;
 }
@@ -82,38 +110,39 @@ body {
 }
 
 
-#image-card {
+.image-card {
     transition: transform 0.2s ease;
     object-fit: cover;
 }
 
-#image-card:hover {
+.image-card:hover {
     transform: scale(1.1);
 }
 
-#logo-image img {
+.logo-image img {
     max-width: 100px;
     max-height: 100px; 
     object-fit: cover;
 }
 
-#card-schedule-img {
-    max-width: 200px;
-    max-height: 200px; 
+.card-schedule-img {
+    max-width: 120px;
+    max-height: 120px;
     object-fit: cover;
-    display: block; 
-    margin-left: 60px;
+    display: block;
+    margin: 0 auto;
 }
 
-#card-schedule-text {
+.card-schedule-text {
     display: block;
-    font-size: 22px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 8px;
     color: #033164;
 }
 
-#page-inquiry {
-    margin-top: -50px;
+.page-inquiry {
+    margin-top: 10px;
     color: #2c2c2c;
 }
 
@@ -123,8 +152,16 @@ body {
 }
 
 #button-back {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#button-back i {
+    color: #fff;
 }
 
 

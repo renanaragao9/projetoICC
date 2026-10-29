@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto ICC - Notícias</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="name-institution">ICC - Instituto do Câncer do Ceará</div>
+    <div class="name-hospital">Hospital Haroldo Juaçaba</div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="input-field">
+            <input id="search" type="text" class="validate search-input center-align">
+            <label for="search" class="search-label">Pesquisar</label>
+        </div>
+    </div>
+</div>
+
+<div id="noResults" style="display: none; text-align: center; color: #FFA500; font-weight: bold;">Nenhum resultado encontrado.</div>
+
+<div class="title">
+    <a href="index.html" class="orange darken-4 waves-effect waves-light btn-large" id="button-back"><i class="material-icons">arrow_back</i>Voltar</a>
+</div>
+
+<div class="row">
+    <!-- NOTÍCIA 1 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Mobile Marketing-bro.svg" alt="Ilustração de campanha de prevenção">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Outubro Rosa</h2>
+                <hr class="outline">
+                <p class="text-card">Data: <span class="text-card-aux">01/10/2024</span></p>
+                <p class="text-card">O ICC realiza durante todo o mês ações gratuitas de conscientização e prevenção do câncer de mama. Agende seu exame.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTÍCIA 2 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Medicine-bro.svg" alt="Ilustração de novo equipamento médico">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Novo Equipamento</h2>
+                <hr class="outline">
+                <p class="text-card">Data: <span class="text-card-aux">15/09/2024</span></p>
+                <p class="text-card">O Hospital Haroldo Juaçaba recebe novo acelerador linear para radioterapia, ampliando a capacidade de atendimento.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTÍCIA 3 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Doctors-bro.svg" alt="Ilustração de mutirão de atendimento">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Mutirão de Consultas</h2>
+                <hr class="outline">
+                <p class="text-card">Data: <span class="text-card-aux">28/08/2024</span></p>
+                <p class="text-card">Mutirão de consultas oncológicas acontece neste fim de semana. Vagas limitadas, procure a recepção para agendar.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Código da VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

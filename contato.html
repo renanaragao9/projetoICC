@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto ICC - Contato</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="name-institution">ICC - Instituto do Câncer do Ceará</div>
+    <div class="name-hospital">Hospital Haroldo Juaçaba</div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="input-field">
+            <input id="search" type="text" class="validate search-input center-align">
+            <label for="search" class="search-label">Pesquisar</label>
+        </div>
+    </div>
+</div>
+
+<div id="noResults" style="display: none; text-align: center; color: #FFA500; font-weight: bold;">Nenhum resultado encontrado.</div>
+
+<div class="title">
+    <a href="index.html" class="orange darken-4 waves-effect waves-light btn-large" id="button-back"><i class="material-icons">arrow_back</i>Voltar</a>
+</div>
+
+<div class="row">
+    <!-- TELEFONE -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Contact us-pana.svg" alt="Ilustração de atendimento telefônico">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Telefone</h2>
+                <hr class="outline">
+                <p class="text-card">Central: <span class="text-card-aux">(85) 3366-9000</span></p>
+                <p class="text-card">Agendamento: <span class="text-card-aux">(85) 3366-9001</span></p>
+                <a href="tel:+558533669000" class="orange darken-4 waves-effect waves-light btn">
+                    <i class="material-icons">call</i>Ligar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- E-MAIL -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Mobile Marketing-bro.svg" alt="Ilustração de e-mail">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">E-mail</h2>
+                <hr class="outline">
+                <p class="text-card">Contato: <span class="text-card-aux">contato@icc.org.br</span></p>
+                <p class="text-card">Ouvidoria: <span class="text-card-aux">ouvidoria@icc.org.br</span></p>
+                <a href="mailto:contato@icc.org.br" class="orange darken-4 waves-effect waves-light btn">
+                    <i class="material-icons">email</i>Enviar e-mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENDEREÇO -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Medicine-bro.svg" alt="Ilustração de localização">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Endereço</h2>
+                <hr class="outline">
+                <p class="text-card">Rua: <span class="text-card-aux">Rua Papi Júnior, 1222 - Rodolfo Teófilo</span></p>
+                <p class="text-card">Cidade: <span class="text-card-aux">Fortaleza - CE</span></p>
+                <p class="text-card">CEP: <span class="text-card-aux">60430-230</span></p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Instituto+do+C%C3%A2ncer+do+Cear%C3%A1+Fortaleza" class="orange darken-4 waves-effect waves-light btn" target="_blank">
+                    <i class="material-icons">place</i>Ver no mapa
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Código da VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

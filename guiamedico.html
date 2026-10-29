@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto ICC - Guia Médico</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="name-institution">ICC - Instituto do Câncer do Ceará</div>
+    <div class="name-hospital">Hospital Haroldo Juaçaba</div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="input-field">
+            <input id="search" type="text" class="validate search-input center-align">
+            <label for="search" class="search-label">Pesquisar</label>
+        </div>
+    </div>
+</div>
+
+<div id="noResults" style="display: none; text-align: center; color: #FFA500; font-weight: bold;">Nenhum resultado encontrado.</div>
+
+<div class="title">
+    <a href="index.html" class="orange darken-4 waves-effect waves-light btn-large" id="button-back"><i class="material-icons">arrow_back</i>Voltar</a>
+</div>
+
+<div class="row">
+    <!-- MÉDICO 1 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Doctors-bro.svg" alt="Ilustração de médico">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Dr. João Silva</h2>
+                <hr class="outline">
+                <p class="text-card">Especialidade: <span class="text-card-aux">Oncologia Clínica</span></p>
+                <p class="text-card">CRM: <span class="text-card-aux">CE 12345</span></p>
+                <p class="text-card">Atendimento: <span class="text-card-aux">Seg a Sex, 08h às 12h</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÉDICO 2 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Medicine-bro.svg" alt="Ilustração de médica">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Dra. Raquel Serafim</h2>
+                <hr class="outline">
+                <p class="text-card">Especialidade: <span class="text-card-aux">Mastologia</span></p>
+                <p class="text-card">CRM: <span class="text-card-aux">CE 23456</span></p>
+                <p class="text-card">Atendimento: <span class="text-card-aux">Ter e Qui, 13h às 18h</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÉDICO 3 -->
+    <div class="col s12 m4">
+        <div class="card card-click" data-clicks="0">
+            <div class="card-image image-card">
+                <img src="img/Doctors-bro.svg" alt="Ilustração de médico">
+            </div>
+            <div class="card-content">
+                <h2 class="cardTitle page-inquiry">Dr. Meireles Lira Júnior</h2>
+                <hr class="outline">
+                <p class="text-card">Especialidade: <span class="text-card-aux">Gastroenterologia</span></p>
+                <p class="text-card">CRM: <span class="text-card-aux">CE 34567</span></p>
+                <p class="text-card">Atendimento: <span class="text-card-aux">Qua e Sex, 08h às 14h</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Código da VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

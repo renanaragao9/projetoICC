@@ -1,10 +1,3 @@
-new window.VLibras.Widget('https://vlibras.gov.br/app');
-    
-function readText(text) {
-    var texto = "127.0.0.1 deseja reproduzir discurso";
-    responsiveVoice.speak(text, "Brazilian Portuguese Female"); // Altere para o idioma e o gênero de voz desejados
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
     const searchInput = document.getElementById('search');
@@ -16,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cards.forEach(function(card) {
                 card.style.display = 'block';
             });
+            document.getElementById('noResults').style.display = 'none';
             return;
         }
 
@@ -47,5 +41,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-// Adiciona um ouvinte de evento de entrada de texto no campo de pesquisa
-document.getElementById('search').addEventListener('input', handleSearchInput);
